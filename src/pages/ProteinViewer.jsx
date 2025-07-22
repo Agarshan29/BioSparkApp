@@ -161,7 +161,7 @@ function ProteinViewer() {
           </div>
 
           <div className="col-span-8">
-            <div className=" rounded-2xl shadow-xl overflow-hidden relative" style={{ marginTop: '-150px' }}>
+            <div className=" rounded-2xl shadow-xl overflow-hidden relative" style={{ marginTop: '-80px' }}>
               {isLoading && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center  z-10">
                   <Loader2 size={48} className="animate-spin " />
