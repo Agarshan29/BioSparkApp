@@ -51,27 +51,12 @@ function Layout() {
     <div className="bg-slate-50 relative overflow-x-hidden">
       <Drawer isOpen={isDrawerOpen} width={drawerWidth} setWidth={setDrawerWidth}>
         <div className="h-full flex flex-col bg-white">
-          <div className="p-4 border-b">
+
+          <div className="p-4 border-b flex-shrink-0">
             <h3 className="text-lg font-semibold text-gray-800">My Notes</h3>
           </div>
-          <div className="p-4 flex-1 overflow-y-auto">
-            {notes.length > 0 ? (
-              <ul className="space-y-3">
-                {notes.map(note => (
-                  <li key={note.id} className="flex items-start justify-between group text-sm text-gray-700">
-                    <span className="flex-grow pr-2">{note.text}</span>
-                    <button onClick={() => handleDeleteNote(note.id)} className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-red-500 transition-opacity">
-                      <TrashIcon className="h-4 w-4" />
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-sm text-gray-500 text-center mt-4">No notes yet.</p>
-            )}
-          </div>
-
-          <div className="p-4 border-t bg-gray-50 space-y-4">
+          
+          <div className="p-4 border-b bg-gray-50 space-y-4 flex-shrink-0">
             <form onSubmit={handleAddNote} className="flex">
               <input
                 type="text"
@@ -88,19 +73,30 @@ function Layout() {
               </button>
             </form>
             <div className="grid grid-cols-2 gap-3">
-              <button
-                onClick={() => setNotes([])} 
-                className="w-full bg-red-500 hover:bg-red-600 text-white py-3 px-4 rounded-md text-base font-medium"
-              >
+              <button onClick={() => setNotes([])} className="w-full bg-red-500 hover:bg-red-600 text-white py-3 px-4 rounded-md text-base font-medium">
                 Clear All
               </button>
-              <button
-                onClick={toggleDrawer}
-                className="w-full font-medium py-3 px-4 rounded-md transition-colors border bg-white hover:bg-gray-100 text-base"
-              >
+              <button onClick={toggleDrawer} className="w-full font-medium py-3 px-4 rounded-md transition-colors border bg-white hover:bg-gray-100 text-base">
                 Close
               </button>
             </div>
+          </div>
+
+          <div className="p-4 flex-grow overflow-y-auto">
+            {notes.length > 0 ? (
+              <ul className="space-y-3">
+                {notes.map(note => (
+                  <li key={note.id} className="flex items-start justify-between group text-sm text-gray-700">
+                    <span className="flex-grow pr-2">{note.text}</span>
+                    <button onClick={() => handleDeleteNote(note.id)} className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-red-500 transition-opacity">
+                      <TrashIcon className="h-4 w-4" />
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-gray-500 text-center mt-4">No notes yet.</p>
+            )}
           </div>
         </div>
       </Drawer>
