@@ -1,12 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is a comprehensive React 19 and Tailwind CSS v4 single-page application built as a developer assignment. It features an interactive Ligand Explorer dashboard that uses RDKit.js to perform on-the-fly 2D structure rendering and calculate key molecular descriptors. A second page provides a full-featured 3D Protein Viewer powered by NGL Viewer, complete with multiple visualization modes and interactive controls. The application is fully responsive and includes a persistent, resizable "notes" drawer to showcase robust state management with React hooks. The code is architected with a focus on clean data flow, reusability, and modern best practices to handle complex asynchronous library integrations.
