@@ -1,0 +1,72 @@
+[
+    {
+      "chemblId": "CHEMBL25",
+      "name": "ASPIRIN",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "type": "Small molecule",
+      "molecularWeight": "180.16"
+    },
+    {
+      "chemblId": "CHEMBL1200469",
+      "name": "PROMAZINE HYDROCHLORIDE",
+      "smiles": "CN(C)CCCN1c2ccccc2Sc2ccccc21",
+      "type": "Small molecule",
+      "molecularWeight": "320.89"
+    },
+    {
+      "chemblId": "CHEMBL1727",
+      "name": "CEPHALEXIN ANHYDROUS",
+      "smiles": "CC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)[C@H](N)c3ccccc3)[C@H]2SC1",
+      "type": "Small molecule",
+      "molecularWeight": "347.40"
+    },
+    {
+      "chemblId": "CHEMBL74",
+      "name": "CROMOLYN SODIUM",
+      "smiles": "O=C(O)c1cc(=O)c2c(OCC(O)COc3cccc4oc(C(=O)O)cc(=O)c34)cccc2o1",
+      "type": "Small molecule",
+      "molecularWeight": "512.33"
+    },
+    {
+      "chemblId": "CHEMBL15972",
+      "name": "BENZALDEHYDE",
+      "smiles": "O=Cc1ccccc1",
+      "type": "Small molecule",
+      "molecularWeight": "106.12"
+    },
+    {
+      "chemblId": "CHEMBL2103782",
+      "name": "ASPERLIN",
+      "smiles": "CC(=O)OC1C=CC(=O)OC1C1OC1C",
+      "type": "Small molecule",
+      "molecularWeight": "212.20"
+    },
+    {
+      "chemblId": "CHEMBL2260549",
+      "name": "ASPIRIN EUGENOL ESTER",
+      "smiles": "C=CCc1ccc(OC(=O)c2ccccc2OC(C)=O)c(OC)c1",
+      "type": "Small molecule",
+      "molecularWeight": "326.35"
+    },
+    {
+      "chemblId": "CHEMBL2106122",
+      "name": "EMEPRONIUM BROMIDE",
+      "smiles": "CC[N+](C)(C)C(C)CC(c1ccccc1)c1ccccc1",
+      "type": "Small molecule",
+      "molecularWeight": "362.36"
+    },
+    {
+      "chemblId": "CHEMBL2105097",
+      "name": "GUACETISAL",
+      "smiles": "COc1ccccc1OC(=O)c1ccccc1OC(C)=O",
+      "type": "Small molecule",
+      "molecularWeight": "286.28"
+    },
+    {
+      "chemblId": "CHEMBL1160819",
+      "name": "AMMONIA SOLUTION, STRONG",
+      "smiles": "N",
+      "type": "Small molecule",
+      "molecularWeight": "17.03"
+    }
+  ]

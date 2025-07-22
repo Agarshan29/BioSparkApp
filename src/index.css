@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0052cc;
+  --color-primary-hover: #0ea300;
+  --color-secondary: #f0f4f8;
+  --color-card-bg: #ffffff;
+  --color-text-main: #172b4d;
+  --color-text-light: #5e6c84;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-text-main);         
+  font-family: theme('fontFamily.sans'); 
+}
